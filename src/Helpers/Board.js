@@ -1,6 +1,7 @@
 class Board {
-  constructor(name) {
-    this.name = name;
+  constructor(board) {
+    this.id = board.id;
+    this.name = board.name;
   }
 }
 
