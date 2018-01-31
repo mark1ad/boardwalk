@@ -13,7 +13,7 @@ let baseURL;
 if (window.location.host === 'localhost:3001') {
   baseURL = 'http://localhost:3000';
 } else {
-  baseURL = 'https://boardwalk.herokuapp.com';
+  baseURL = 'https://boardwalk-api.herokuapp.com';
 }
 global.axiosInstance = axios.create({
   baseURL: baseURL
