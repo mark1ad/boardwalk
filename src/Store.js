@@ -1,8 +1,8 @@
 import { createStore, applyMiddleware } from 'redux';
 
-import { Boards } from './Reducers/Boards';
+import { Boards } from './Reducers/BoardReducers';
 
-let initStore = {};
+let initStore = {boards:[]};
 
 const logger = store => next => action => {
   // console.groupCollapsed("dispatching ", action.type)

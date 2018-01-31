@@ -20,7 +20,7 @@ class BoardCard extends Component {
 
 BoardCard.propTypes = {
   name: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+  id: PropTypes.number.isRequired
 }
 
 export default BoardCard;

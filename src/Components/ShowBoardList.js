@@ -1,15 +1,23 @@
 import { connect } from 'react-redux';
 
 import BoardList from './BoardList';
-import Board from '../Helpers/Board';
+import { setBoards } from '../Actions/BoardActions';
 
 const mapStateToProps = (state, props) => {
-  const backlog = new Board("1", "Backlog");
-  const userStory = new Board("2", "User Stories");
-  const completed = new Board("3", "Completed");
-  const board4 = new Board("4", "Board 4");
-  const board5 = new Board("5", "Board 5");
-  return {boards: [backlog, userStory, completed, board4, board5]};
+
+  if (state.boards === undefined || state.boards.length === 0) {
+    global.axiosInstance.get("boards")
+    .then(res => {
+      const boards = res.data;
+      global.store.dispatch(setBoards(boards));
+    })
+    .catch((response) => {
+      // TODO: Handle failure
+      console.log("ShowBoardList get boards fail\n", response);
+    })
+  }
+
+  return {boards: state.boards};
 }
 
 const ShowBoardList = connect(

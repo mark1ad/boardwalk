@@ -15,7 +15,7 @@ class BoardList extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          {this.props.boards.map(board =>
+          { this.props.boards.map(board =>
             <div key={board.id} className="">
               <BoardCard id={board.id} name={board.name} />
             </div>
