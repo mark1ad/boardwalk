@@ -13,7 +13,7 @@ import BoardCard from './BoardCard';
 class BoardList extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid board-list">
         <div className="row">
           { this.props.boards.map(board =>
             <div key={board.id} className="">
