@@ -7,6 +7,7 @@
 
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
+import ShowCreateBoardCard from './ShowCreateBoardCard';
 
 import BoardCard from './BoardCard';
 
@@ -20,6 +21,7 @@ class BoardList extends Component {
               <BoardCard id={board.id} name={board.name} />
             </div>
           )}
+          <ShowCreateBoardCard />
         </div>
       </div>
     )
