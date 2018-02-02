@@ -16,16 +16,23 @@ const CreateBoardCard = ({createBoard}) => {
     _name.value = "";
   }
 
+  const cancel = e => {
+    e.preventDefault();
+  }
+
   return (
     <div className="create-board-card" onClick={showForm}>
       Create New Board...
 
-      <form onSubmit={submit}>
+      <form onSubmit={submit} onCancel={cancel}>
         <input type="text"
           className="form-control"
           ref={input => _name = input}
           placeholder="Board Name" />
-        <button className="btn btn-default" type="submit">Create</button>
+        <div className="row button-row">
+        <button className="btn" type="cancel">Cancel</button>
+        <button className="btn btn-primary" type="submit">Create</button>
+        </div>
       </form>
     </div>
   )
