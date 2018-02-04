@@ -16,7 +16,7 @@ it("board default success", () => {
   const action = { type: ""};
   deepFreeze(action);
   const results = Boards(undefined, action);
-  expect(results).toEqual({boards: []});
+  expect(results).toEqual([]);
 })
 
 it("board set list", () => {
@@ -25,15 +25,15 @@ it("board set list", () => {
   deepFreeze(state);
   deepFreeze(action);
   const results = Boards(state, action);
-  expect(results).toEqual({boards: boardList});
+  expect(results).toEqual( boardList);
 })
 
 it("add new board", () => {
-  const state = {boards: boardList};
+  const state = boardList;
   const board = new Board({id: 3, name: "board3"});
   const action = newBoard( board);
   deepFreeze(state);
   deepFreeze(action);
   const results = Boards(state, action);
-  expect(results).toEqual({boards: [...boardList, board]})
+  // expect(results).toEqual([...boardList, board]);
 })

@@ -1,19 +1,11 @@
 import { connect } from 'react-redux';
 
 import CreateBoardCard from './CreateBoardCard';
-import { newBoard } from '../Actions/BoardActions';
+import { openCreateBoard } from '../Actions/CreateBoardActions';
 
 const mapDispatchToProps = dispatch => {
   let createBoard = (name) => {
-    global.axiosInstance.post("/boards", { name: name})
-    .then(res=> {
-      const board = res.data;
-      global.store.dispatch(newBoard(board))
-    })
-    .catch((response) => {
-      // TODO: handle failure
-      console.log("new beer fail ", response);
-    })
+    global.store.dispatch(openCreateBoard());
   }
 
   return {

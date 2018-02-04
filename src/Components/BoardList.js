@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
-import ShowCreateBoardCard from './ShowCreateBoardCard';
+import ShowCreateBoardContainer from './ShowCreateBoardContainer';
 
 import BoardCard from './BoardCard';
 
@@ -16,12 +16,12 @@ class BoardList extends Component {
     return (
       <div className="container-fluid board-list">
         <div className="row">
-          { this.props.boards.map(board =>
+          { this.props.Boards.map(board =>
             <div key={board.id} className="">
               <BoardCard id={board.id} name={board.name} />
             </div>
           )}
-          <ShowCreateBoardCard />
+          <ShowCreateBoardContainer />
         </div>
       </div>
     )
@@ -29,7 +29,7 @@ class BoardList extends Component {
 }
 
 BoardList.propTypes = {
-  boards: PropTypes.array.isRequired
+  Boards: PropTypes.array.isRequired
 }
 
 export default BoardList;
