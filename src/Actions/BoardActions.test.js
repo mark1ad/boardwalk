@@ -1,5 +1,5 @@
-import { setBoards } from './BoardActions';
-import { SET_BOARDS } from './ActionTypes';
+import { setBoards, newBoard } from './BoardActions';
+import { SET_BOARDS, NEW_BOARD } from './ActionTypes';
 import Board from '../Helpers/Board';
 
 it('action setBoards empty list', () => {
@@ -16,5 +16,14 @@ it('action setBoards', () => {
   expect(action).toEqual({
     type: SET_BOARDS,
     boards: [ board ]
+  })
+})
+
+it('action newBoard', () => {
+  const board = new Board("3", "board3");
+  const action = newBoard(board);
+  expect(action).toEqual({
+    type: NEW_BOARD,
+    board: board
   })
 })

@@ -1,8 +1,9 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 import { Boards } from './Reducers/BoardReducers';
+import { CreateBoard } from './Reducers/CreateBoardReducer';
 
-let initStore = {boards:[]};
+let initStore = {};
 
 const logger = store => next => action => {
   // console.groupCollapsed("dispatching ", action.type)
@@ -16,6 +17,6 @@ const logger = store => next => action => {
 }
 
 const Store = (initialState = initStore) =>
-  applyMiddleware(logger)(createStore)(Boards, initialState);
+  applyMiddleware(logger)(createStore)(combineReducers({Boards, CreateBoard}), initialState)
 
 export default Store;

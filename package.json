@@ -21,5 +21,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
+  },
+  "devDependencies": {
+    "deep-freeze": "0.0.1"
   }
 }

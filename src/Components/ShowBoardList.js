@@ -5,7 +5,7 @@ import { setBoards } from '../Actions/BoardActions';
 
 const mapStateToProps = (state, props) => {
 
-  if (state.boards === undefined || state.boards.length === 0) {
+  if (state.Boards === undefined || state.Boards.length === 0) {
     global.axiosInstance.get("boards")
     .then(res => {
       const boards = res.data;
@@ -17,7 +17,7 @@ const mapStateToProps = (state, props) => {
     })
   }
 
-  return {boards: state.boards};
+  return state;
 }
 
 const ShowBoardList = connect(
