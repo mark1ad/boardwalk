@@ -1,9 +1,9 @@
-// CreateBoardCard
+// ActiveCreateBoardCard
 //
 
 import React from 'react';
 
-const CreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
+const ActiveCreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
   let _name;
 
   const submit = e => {
@@ -34,4 +34,4 @@ const CreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
   )
 }
 
-export default CreateBoardCard;
+export default ActiveCreateBoardCard;
