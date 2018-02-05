@@ -12,7 +12,7 @@ import { withRouter } from 'react-router-dom';
 const BoardCard = (props) => {
   const submit = e => {
     e.preventDefault();
-    props.history.push('/board/' + props.name);
+    props.history.push('/board/' + props.id + '/' + props.name);
   }
 
   return (
