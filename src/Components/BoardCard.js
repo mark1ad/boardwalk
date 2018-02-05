@@ -7,12 +7,11 @@
 
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { withRouter } from 'react-router-dom';
 
 const BoardCard = (props) => {
   const submit = e => {
     e.preventDefault();
-    props.history.push('/board/' + props.id + '/' + props.name);
+    props.submit();
   }
 
   return (
@@ -27,4 +26,4 @@ BoardCard.propTypes = {
   id: PropTypes.number.isRequired
 }
 
-export default withRouter(BoardCard);
+export default BoardCard;
