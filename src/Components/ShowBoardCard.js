@@ -9,10 +9,10 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 
-import BoardCard from './BoardCard';
+import Card from './Card';
 
 const mapStateToProps = (state, props) => {
-  return {id: props.id, name: props.name};
+  return {id: props.id, name: props.name, class: "board-card"};
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -25,6 +25,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 const ShowBoardCard = connect(
   mapStateToProps,
   mapDispatchToProps
-) (BoardCard);
+) (Card);
 
 export default withRouter(ShowBoardCard);
