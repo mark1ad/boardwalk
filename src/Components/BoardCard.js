@@ -5,17 +5,21 @@
 // Attributes:
 //  name: string, required.
 
-import React, { Component } from 'react';
+import React from 'react';
 import { PropTypes } from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
-class BoardCard extends Component {
-  render() {
-    return (
-      <div className="board-card">
-        {this.props.name}
-      </div>
-    )
+const BoardCard = (props) => {
+  const submit = e => {
+    e.preventDefault();
+    props.history.push('/board/' + props.name);
   }
+
+  return (
+    <div className="board-card" onClick={submit}>
+      {props.name}
+    </div>
+  )
 }
 
 BoardCard.propTypes = {
@@ -23,4 +27,4 @@ BoardCard.propTypes = {
   id: PropTypes.number.isRequired
 }
 
-export default BoardCard;
+export default withRouter(BoardCard);
