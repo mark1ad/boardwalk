@@ -6,17 +6,25 @@
 //  board: object, required.
 
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
-import BoardCard from './BoardCard';
+
+import Card from './Card';
 
 const mapStateToProps = (state, props) => {
-  console.log("state ", state);
-  console.log("props ", props);
+  return {id: props.id, name: props.name, class: "board-card"};
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  let submit = () => {
+    ownProps.history.push('/board/' + ownProps.id + '/' + ownProps.name);
+  }
+  return {submit: submit}
 }
 
 const ShowBoardCard = connect(
   mapStateToProps,
-  null
-) (BoardCard);
+  mapDispatchToProps
+) (Card);
 
-export default ShowBoardCard;
+export default withRouter(ShowBoardCard);

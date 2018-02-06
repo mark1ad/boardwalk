@@ -4,6 +4,10 @@ import ActiveCreateBoardCard from './ActiveCreateBoardCard';
 import { newBoard } from '../Actions/BoardActions';
 import { closeCreateBoard } from '../Actions/CreateBoardActions';
 
+const mapStateToProps = () => {
+  return {placeholder: "Board Name"};
+}
+
 const mapDispatchToProps = dispatch => {
   let submitBoard = (name) => {
     global.axiosInstance.post("/boards", { name: name})
@@ -28,7 +32,7 @@ const mapDispatchToProps = dispatch => {
 }
 
 const ShowCreateBoardCard = connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 ) (ActiveCreateBoardCard);
 

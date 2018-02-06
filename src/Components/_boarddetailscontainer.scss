@@ -1,0 +1,11 @@
+.board-details-container {
+  color: white;
+  background-color: grey;
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+
+  // Center contents vertically
+  display: flex;
+  align-items: center;
+}

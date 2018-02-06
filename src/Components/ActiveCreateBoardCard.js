@@ -1,9 +1,9 @@
-// CreateBoardCard
+// ActiveCreateBoardCard
 //
 
 import React from 'react';
 
-const CreateBoardCard = ({submitBoard, cancelNewBoard}) => {
+const ActiveCreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
   let _name;
 
   const submit = e => {
@@ -24,7 +24,7 @@ const CreateBoardCard = ({submitBoard, cancelNewBoard}) => {
         <input type="text"
           className="form-control"
           ref={input => _name = input}
-          placeholder="Board Name" />
+          placeholder={placeholder} />
         <div className="row button-row">
         <button className="btn btn-primary" type="submit" onClick={submit}>Create</button>
           <button className="btn" type="cancel" onClick={cancel}>Cancel</button>
@@ -34,4 +34,4 @@ const CreateBoardCard = ({submitBoard, cancelNewBoard}) => {
   )
 }
 
-export default CreateBoardCard;
+export default ActiveCreateBoardCard;

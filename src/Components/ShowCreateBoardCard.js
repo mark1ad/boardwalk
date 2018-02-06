@@ -1,21 +1,28 @@
 import { connect } from 'react-redux';
 
-import CreateBoardCard from './CreateBoardCard';
+import Card from './Card';
 import { openCreateBoard } from '../Actions/CreateBoardActions';
 
+const mapStateToProps = (state, props) => {
+  return {
+    id: 0, // not used
+    name: "Create New Board...",
+    class: "create-board-card"
+  };
+}
 const mapDispatchToProps = dispatch => {
-  let createBoard = (name) => {
+  let submit = () => {
     global.store.dispatch(openCreateBoard());
   }
 
   return {
-    createBoard: createBoard
+    submit: submit
   }
 }
 
 const ShowCreateBoardCard = connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
-) (CreateBoardCard);
+) (Card);
 
 export default ShowCreateBoardCard;
