@@ -1,7 +1,6 @@
 import {
   SET_ACTIVE_BOARD
 } from '../Actions/ActionTypes';
-import Board from '../Helpers/Board';
 
 export const ActiveBoard = (state = {}, action) => {
   switch (action.type) {

@@ -2,16 +2,24 @@
 //
 // Displays a board's lists
 
-import React from 'react';
+import React, { Component   } from 'react';
 
 import ShowBoardDetailsHeader from './ShowBoardDetailsHeader';
 
-const BoardDetailsContainer = ({name}) => {
+class BoardDetailsContainer extends Component {
+  componentWillMount() {
+    this.props.getBoardInfo();
+  }
+
+  render() {
+    const { name } = this.props;
+
     return (
       <div className="board-details-container">
         <ShowBoardDetailsHeader name={name} />
       </div>
     )
+  }
 }
 
 export default BoardDetailsContainer;
