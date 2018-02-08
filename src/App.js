@@ -14,7 +14,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={ShowBoardList} />
-          <Route exact path="/board/:id/:name"
+          <Route exact path="/board/:id"
             component={ShowBoardDetailsContainer} />
         </div>
       </HashRouter>

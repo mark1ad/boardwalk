@@ -3,3 +3,5 @@ export const NEW_BOARD = 'NEW_BOARD';
 
 export const OPEN_CREATE_BOARD = "OPEN_CREATE_BOARD";
 export const CLOSE_CREATE_BOARD = "CLOSE_CREATE_BOARD";
+
+export const SET_ACTIVE_BOARD = "SET_ACTIVE_BOARD";

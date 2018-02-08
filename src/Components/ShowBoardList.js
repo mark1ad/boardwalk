@@ -4,12 +4,19 @@ import BoardList from './BoardList';
 import { setBoards } from '../Actions/BoardActions';
 
 const mapStateToProps = (state, props) => {
+  return {Boards: state.Boards};
+}
 
-  if (state.Boards === undefined || state.Boards.length === 0) {
+const mapDispatchToProps = (dispatch) => {
+  let getBoards = () => {
+    // Clear board list
+    dispatch(setBoards([]));
+
+    // Get boards
     global.axiosInstance.get("boards")
     .then(res => {
       const boards = res.data;
-      global.store.dispatch(setBoards(boards));
+      dispatch(setBoards(boards));
     })
     .catch((response) => {
       // TODO: Handle failure
@@ -17,12 +24,12 @@ const mapStateToProps = (state, props) => {
     })
   }
 
-  return state;
+  return {getBoards: getBoards}
 }
 
 const ShowBoardList = connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 ) (BoardList);
 
 export default ShowBoardList;
