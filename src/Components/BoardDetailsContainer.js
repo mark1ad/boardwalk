@@ -12,7 +12,7 @@ class BoardDetailsContainer extends Component {
   }
 
   render() {
-    const { name } = this.props;
+    const { name } = this.props.ActiveBoard;
 
     return (
       <div className="board-details-container">

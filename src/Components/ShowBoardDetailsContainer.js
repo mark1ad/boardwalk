@@ -5,7 +5,7 @@ import Board from '../Helpers/Board';
 import { setActiveBoard } from '../Actions/ActiveBoardActions';
 
 const mapStateToProps = (state, props) => {
-  return (Object)(state.ActiveBoard);
+  return {ActiveBoard:state.ActiveBoard};
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {

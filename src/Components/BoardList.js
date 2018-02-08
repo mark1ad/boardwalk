@@ -12,6 +12,10 @@ import ShowCreateBoardContainer from './ShowCreateBoardContainer';
 import ShowBoardCard from './ShowBoardCard';
 
 class BoardList extends Component {
+  componentWillMount() {
+    this.props.getBoards();
+  }
+
   render() {
     return (
       <div className="container-fluid board-list">
