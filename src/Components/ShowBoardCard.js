@@ -17,7 +17,7 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   let submit = () => {
-    ownProps.history.push('/board/' + ownProps.id + '/' + ownProps.name);
+    ownProps.history.push('/board/' + ownProps.id);
   }
   return {submit: submit}
 }
