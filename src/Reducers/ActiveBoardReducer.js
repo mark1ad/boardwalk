@@ -3,7 +3,13 @@ import {
   ADD_ACTIVE_BOARD_TASKLISTS
 } from '../Actions/ActionTypes';
 
-export const ActiveBoard = (state = {}, action) => {
+const initialState = {
+  id: "",
+  name: "",
+  tasklists: []
+};
+
+export const ActiveBoard = (state = initialState, action) => {
   switch (action.type) {
     case (SET_ACTIVE_BOARD):
       return action.board;
@@ -13,4 +19,4 @@ export const ActiveBoard = (state = {}, action) => {
     default:
       return state;
   }
-}
+};

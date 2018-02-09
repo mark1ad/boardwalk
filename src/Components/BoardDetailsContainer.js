@@ -5,6 +5,7 @@
 import React, { Component   } from 'react';
 
 import ShowBoardDetailsHeader from './ShowBoardDetailsHeader';
+import ShowTasklistContainer from './ShowTasklistContainer';
 
 class BoardDetailsContainer extends Component {
   componentWillMount() {
@@ -12,11 +13,15 @@ class BoardDetailsContainer extends Component {
   }
 
   render() {
-    const { name } = this.props.ActiveBoard;
+    const { name, tasklists } = this.props.ActiveBoard;
 
     return (
       <div className="board-details-container">
         <ShowBoardDetailsHeader name={name} />
+
+        { tasklists.map(tasklist =>
+          <ShowTasklistContainer key={tasklist.id} tasklist={tasklist} />
+        )}
       </div>
     )
   }

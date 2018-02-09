@@ -13,7 +13,7 @@ it("board default sucess", () => {
   const action = { type: ""};
   deepFreeze(action);
   const results = ActiveBoard(undefined, action);
-  expect(results).toEqual({});
+  expect(results).toEqual({id: "", name: "", tasklists: []});
 })
 
 it("set active board", () => {
