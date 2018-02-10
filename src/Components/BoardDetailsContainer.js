@@ -19,9 +19,11 @@ class BoardDetailsContainer extends Component {
       <div className="board-details-container">
         <ShowBoardDetailsHeader name={name} />
 
-        { tasklists.map(tasklist =>
-          <ShowTasklistContainer key={tasklist.id} tasklist={tasklist} />
-        )}
+        <div className="board-details-tasklists">
+          { tasklists.map(tasklist =>
+            <ShowTasklistContainer key={tasklist.id} tasklist={tasklist} />
+          )}
+        </div>
       </div>
     )
   }

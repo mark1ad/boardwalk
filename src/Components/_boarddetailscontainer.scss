@@ -1,2 +1,9 @@
 .board-details-container {
 }
+
+.board-details-tasklists {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
