@@ -1,11 +1,9 @@
 .board-details-container {
-  color: white;
-  background-color: grey;
-  width: auto;
-  height: 50px;
-  padding: 0 20px;
+}
 
-  // Center contents vertically
+.board-details-tasklists {
+  width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
 }

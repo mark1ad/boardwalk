@@ -8,8 +8,8 @@ import {
 } from '../Actions/BoardActions';
 
 const boardList = [
-  { id: 1, name: "board1"},
-  { id: 2, name: "board2"}
+  { id: 1, name: "board1", tasklists: []},
+  { id: 2, name: "board2", tasklists: []}
 ];
 
 it("board default success", () => {
