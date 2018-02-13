@@ -1,7 +1,7 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
-import ShowCreateBoardCard from './ShowCreateBoardCard';
-import ShowActiveCreateBoardCard from './ShowActiveCreateBoardCard';
+import React from "react";
+import PropTypes from "prop-types";
+import ShowCreateBoardCard from "./ShowCreateBoardCard";
+import ShowActiveCreateBoardCard from "./ShowActiveCreateBoardCard";
 
 const CreateBoardContainer = (props) => {
   return (
@@ -10,7 +10,11 @@ const CreateBoardContainer = (props) => {
         <ShowActiveCreateBoardCard /> :
         <ShowCreateBoardCard />}
     </div>
-  )
-}
+  );
+};
+
+CreateBoardContainer.propTypes = {
+  isBoardOpen: PropTypes.bool.isRequired
+};
 
 export default CreateBoardContainer;

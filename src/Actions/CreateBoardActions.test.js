@@ -1,18 +1,18 @@
 import {
   OPEN_CREATE_BOARD,
   CLOSE_CREATE_BOARD
-} from './ActionTypes';
+} from "./ActionTypes";
 import {
   openCreateBoard,
   closeCreateBoard
-} from './CreateBoardActions';
+} from "./CreateBoardActions";
 
-it('action openCreateBoard', () => {
+it("action openCreateBoard", () => {
   const action = openCreateBoard();
   expect(action).toEqual({type: OPEN_CREATE_BOARD});
-})
+});
 
-it('action closeCreateBoard', () => {
+it("action closeCreateBoard", () => {
   const action = closeCreateBoard();
   expect(action).toEqual({type: CLOSE_CREATE_BOARD});
-})
+});
