@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav
+  className="navbar navbar-dark bg-dark"
+>
+  <a
+    className="navbar-brand"
+    href="/"
+  >
+    Boardwalk
+  </a>
+</nav>
+`;
