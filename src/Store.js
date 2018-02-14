@@ -9,12 +9,12 @@ let initStore = {};
 const logger = store => next => action => {
   // console.groupCollapsed("dispatching ", action.type)
   /* eslint-disable no-console */
-  console.log("\n>>> Dispatching ", action.type);
-  console.log("prev state ", store.getState());
-  console.log("action ", action);
+  // console.log("\n>>> Dispatching ", action.type);
+  // console.log("prev state ", store.getState());
+  // console.log("action ", action);
   next(action);
-  console.log("next state ", store.getState());
-  console.log("\n");
+  // console.log("next state ", store.getState());
+  // console.log("\n");
   // console.groupEnd();
   /* eslint-enable no-console */
 };

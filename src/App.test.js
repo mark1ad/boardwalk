@@ -1,7 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {shallow } from 'enzyme';
 import App from './App';
 
-it('dummy', () => {
+it('renders without crashing', () => {
+    shallow(<App />);
+})
 
+it("renders correctly", () => {
+  const tree = shallow(<App />);
+  expect(tree).toMatchSnapshot();
 })
