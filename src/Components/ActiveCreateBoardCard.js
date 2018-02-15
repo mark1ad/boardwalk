@@ -29,7 +29,7 @@ const ActiveCreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
         />
         <div className="row button-row">
           <button className="btn btn-primary" type="submit" onClick={submit}>Create</button>
-          <button className="btn" type="cancel" onClick={cancel}>Cancel</button>
+          <button className="btn cancel-btn" type="cancel" onClick={cancel}>Cancel</button>
         </div>
       </form>
     </div>

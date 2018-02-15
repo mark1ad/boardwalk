@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import renderer from 'react-test-renderer';
-import {shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Card from './Card';
 
 const mockSubmitFunction = jest.fn();
