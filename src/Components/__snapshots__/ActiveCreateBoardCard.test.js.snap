@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="create-board-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="form-control"
+      placeholder="placeholder"
+      type="text"
+    />
+    <div
+      className="row button-row"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Create
+      </button>
+      <button
+        className="btn cancel-btn"
+        onClick={[Function]}
+        type="cancel"
+      >
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
+`;

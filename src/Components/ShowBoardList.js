@@ -1,11 +1,11 @@
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
-import BoardList from './BoardList';
-import { setBoards } from '../Actions/BoardActions';
+import BoardList from "./BoardList";
+import { setBoards } from "../Actions/BoardActions";
 
-const mapStateToProps = (state, props) => {
+const mapStateToProps = (state) => {
   return {Boards: state.Boards};
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   let getBoards = () => {
@@ -14,18 +14,20 @@ const mapDispatchToProps = (dispatch) => {
 
     // Get boards
     global.axiosInstance.get("boards")
-    .then(res => {
-      const boards = res.data;
-      dispatch(setBoards(boards));
-    })
-    .catch((response) => {
-      // TODO: Handle failure
-      console.log("ShowBoardList get boards fail\n", response);
-    })
-  }
+      .then(res => {
+        const boards = res.data;
+        dispatch(setBoards(boards));
+      })
+      .catch((response) => {
+        // TODO: Handle failure
+        /* eslint-disable no-console */
+        console.log("ShowBoardList get boards fail\n", response);
+        /* eslint-enable no-console */
+      });
+  };
 
-  return {getBoards: getBoards}
-}
+  return {getBoards: getBoards};
+};
 
 const ShowBoardList = connect(
   mapStateToProps,

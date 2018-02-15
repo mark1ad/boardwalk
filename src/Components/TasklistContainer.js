@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { PropTypes } from "prop-types";
 
 const TasklistContainer = (props) => {
   return (
@@ -7,7 +8,11 @@ const TasklistContainer = (props) => {
         {props.tasklist.name}
       </div>
     </div>
-  )
-}
+  );
+};
+
+TasklistContainer.propTypes = {
+  tasklist: PropTypes.object.isRequired
+};
 
 export default TasklistContainer;

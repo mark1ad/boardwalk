@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BoardDetailsContainer
+    ActiveBoard={
+        Board {
+            "id": 1,
+            "name": "name",
+            "tasklists": Array [
+              Tasklist {
+                "id": 1,
+                "name": "tasklist1",
+              },
+            ],
+          }
+    }
+    getBoardInfo={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(BoardDetailsHeader)
+          name="name"
+/>,
+        <div
+          className="board-details-tasklists"
+>
+          <Connect(TasklistContainer)
+                    tasklist={
+                              Tasklist {
+                                        "id": 1,
+                                        "name": "tasklist1",
+                                      }
+                    }
+          />
+</div>,
+      ],
+      "className": "board-details-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "name": "name",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Connect(TasklistContainer)
+              tasklist={
+                            Tasklist {
+                                          "id": 1,
+                                          "name": "tasklist1",
+                                        }
+              }
+/>,
+          ],
+          "className": "board-details-tasklists",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "tasklist": Tasklist {
+                "id": 1,
+                "name": "tasklist1",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(BoardDetailsHeader)
+            name="name"
+/>,
+          <div
+            className="board-details-tasklists"
+>
+            <Connect(TasklistContainer)
+                        tasklist={
+                                    Tasklist {
+                                                "id": 1,
+                                                "name": "tasklist1",
+                                              }
+                        }
+            />
+</div>,
+        ],
+        "className": "board-details-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "name": "name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Connect(TasklistContainer)
+                tasklist={
+                                Tasklist {
+                                                "id": 1,
+                                                "name": "tasklist1",
+                                              }
+                }
+/>,
+            ],
+            "className": "board-details-tasklists",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "tasklist": Tasklist {
+                  "id": 1,
+                  "name": "tasklist1",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

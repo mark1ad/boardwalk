@@ -2,10 +2,11 @@
 //
 // Displays a board's lists
 
-import React, { Component   } from 'react';
+import React, { Component   } from "react";
+import { PropTypes } from "prop-types";
 
-import ShowBoardDetailsHeader from './ShowBoardDetailsHeader';
-import ShowTasklistContainer from './ShowTasklistContainer';
+import ShowBoardDetailsHeader from "./ShowBoardDetailsHeader";
+import ShowTasklistContainer from "./ShowTasklistContainer";
 
 class BoardDetailsContainer extends Component {
   componentWillMount() {
@@ -25,8 +26,13 @@ class BoardDetailsContainer extends Component {
           )}
         </div>
       </div>
-    )
+    );
   }
 }
+
+BoardDetailsContainer.propTypes = {
+  getBoardInfo: PropTypes.func.isRequired,
+  ActiveBoard: PropTypes.object.isRequired
+};
 
 export default BoardDetailsContainer;
