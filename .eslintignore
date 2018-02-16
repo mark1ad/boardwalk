@@ -1,2 +1,4 @@
+coverage
+setupTests.js
 *.test.js
 src/registerServiceWorker.js
