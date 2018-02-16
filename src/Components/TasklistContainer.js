@@ -1,5 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
+import ShowTaskCard from './ShowTaskCard';
 
 const TasklistContainer = (props) => {
   return (
@@ -7,6 +8,11 @@ const TasklistContainer = (props) => {
       <div className="tasklist-container-name">
         {props.tasklist.name}
       </div>
+      { props.tasklist.tasks.map(task =>
+        (
+          <ShowTaskCard key={task.id} task={task} />
+        )
+      )}
     </div>
   );
 };

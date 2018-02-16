@@ -14,3 +14,8 @@ it("valid name", () => {
   const tasklist = new Tasklist({id: "1", name: "tasklist1"});
   expect(tasklist.name).toEqual("tasklist1");
 })
+
+it("empty tasks array from constructor", () => {
+  const tasklist = new Tasklist({id: "1", name: "tasklist1"});
+  expect(tasklist.tasks.length).toEqual(0);
+})

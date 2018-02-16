@@ -13,6 +13,7 @@ ShallowWrapper {
               Tasklist {
                 "id": 1,
                 "name": "tasklist1",
+                "tasks": Array [],
               },
             ],
           }
@@ -43,6 +44,7 @@ ShallowWrapper {
                               Tasklist {
                                         "id": 1,
                                         "name": "tasklist1",
+                                        "tasks": Array [],
                                       }
                     }
           />
@@ -74,6 +76,7 @@ ShallowWrapper {
                             Tasklist {
                                           "id": 1,
                                           "name": "tasklist1",
+                                          "tasks": Array [],
                                         }
               }
 />,
@@ -90,6 +93,7 @@ ShallowWrapper {
               "tasklist": Tasklist {
                 "id": 1,
                 "name": "tasklist1",
+                "tasks": Array [],
               },
             },
             "ref": null,
@@ -120,6 +124,7 @@ ShallowWrapper {
                                     Tasklist {
                                                 "id": 1,
                                                 "name": "tasklist1",
+                                                "tasks": Array [],
                                               }
                         }
             />
@@ -151,6 +156,7 @@ ShallowWrapper {
                                 Tasklist {
                                                 "id": 1,
                                                 "name": "tasklist1",
+                                                "tasks": Array [],
                                               }
                 }
 />,
@@ -167,6 +173,7 @@ ShallowWrapper {
                 "tasklist": Tasklist {
                   "id": 1,
                   "name": "tasklist1",
+                  "tasks": Array [],
                 },
               },
               "ref": null,
