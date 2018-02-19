@@ -17,8 +17,16 @@ import Tasklist from './Helpers/Tasklist';
 let store;
 let board1 = new Board( {id: 1, name: "board1"});
 let board2 = new Board( {id: 2, name: "board2"});
-let tasklist1 = new Tasklist({id: 1, name: "tasklist1"});
-let tasklist2 = new Tasklist({id: 2, name: "tasklist2"});
+const dbTasklist1 = {
+  tasklist:{id: 1, name: "tasklist1"},
+  tasks: []
+};
+const dbTasklist2 = {
+  tasklist: {id: 2, name: "tasklist2"},
+  tasks: []
+};
+const tasklist1 = new Tasklist(dbTasklist1);
+const tasklist2 = new Tasklist(dbTasklist2);
 
 beforeEach(() => {
   store = Store();
@@ -48,9 +56,9 @@ it("should set active board", () => {
 })
 
 it("should add tasklists to ActiveBoard", () => {
-  const tasklists = [ tasklist1, tasklist2 ];
-  store.dispatch(addActiveBoardTasklists(tasklists));
-  expect(store.getState().ActiveBoard.tasklists).toEqual(tasklists);
+  store.dispatch(addActiveBoardTasklists([ dbTasklist1, dbTasklist2 ]));
+  expect(store.getState().ActiveBoard.tasklists)
+    .toEqual([ tasklist1, tasklist2 ]);
 })
 
 //*************************

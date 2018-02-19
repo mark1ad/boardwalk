@@ -1,13 +1,292 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<div
-  className="tasklist-container"
+exports[`renders correctly with 2 tasks in tasklist 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TasklistContainer
+    tasklist={
+        Tasklist {
+            "id": 1,
+            "name": "name",
+            "tasks": Array [
+              Task {
+                "id": 1,
+                "name": "task1",
+              },
+              Task {
+                "id": 2,
+                "name": "task2",
+              },
+            ],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="tasklist-container-name"
 >
-  <div
-    className="tasklist-container-name"
-  >
-    name
-  </div>
-</div>
+          name
+</div>,
+        Array [
+          <Connect(Card)
+            task={
+                        Task {
+                                    "id": 1,
+                                    "name": "task1",
+                                  }
+            }
+/>,
+          <Connect(Card)
+            task={
+                        Task {
+                                    "id": 2,
+                                    "name": "task2",
+                                  }
+            }
+/>,
+        ],
+      ],
+      "className": "tasklist-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "name",
+          "className": "tasklist-container-name",
+        },
+        "ref": null,
+        "rendered": "name",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "task": Task {
+            "id": 1,
+            "name": "task1",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "task": Task {
+            "id": 2,
+            "name": "task2",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="tasklist-container-name"
+>
+            name
+</div>,
+          Array [
+            <Connect(Card)
+              task={
+                            Task {
+                                          "id": 1,
+                                          "name": "task1",
+                                        }
+              }
+/>,
+            <Connect(Card)
+              task={
+                            Task {
+                                          "id": 2,
+                                          "name": "task2",
+                                        }
+              }
+/>,
+          ],
+        ],
+        "className": "tasklist-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "name",
+            "className": "tasklist-container-name",
+          },
+          "ref": null,
+          "rendered": "name",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "task": Task {
+              "id": 1,
+              "name": "task1",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "task": Task {
+              "id": 2,
+              "name": "task2",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`renders correctly with no tasks in tasklist 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TasklistContainer
+    tasklist={
+        Tasklist {
+            "id": 1,
+            "name": "name",
+            "tasks": Array [],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="tasklist-container-name"
+>
+          name
+</div>,
+        Array [],
+      ],
+      "className": "tasklist-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "name",
+          "className": "tasklist-container-name",
+        },
+        "ref": null,
+        "rendered": "name",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="tasklist-container-name"
+>
+            name
+</div>,
+          Array [],
+        ],
+        "className": "tasklist-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "name",
+            "className": "tasklist-container-name",
+          },
+          "ref": null,
+          "rendered": "name",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;
