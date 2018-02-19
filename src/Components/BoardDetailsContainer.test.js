@@ -8,7 +8,10 @@ import Tasklist from '../Helpers/Tasklist';
 
 let mockGetBoardInfoFunc;
 const board = new Board({id: 1, name: "name"});
-const tasklist = new Tasklist({id: 1, name: "tasklist1"});
+const tasklist = new Tasklist({
+  tasklist: {id: 1, name: "tasklist1"},
+  tasks: []
+});
 board.tasklists = [ tasklist ];
 
 beforeEach(() => {

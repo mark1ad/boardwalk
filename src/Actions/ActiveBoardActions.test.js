@@ -19,12 +19,11 @@ it("action setActiveBoard", () => {
 });
 
 it("action addActiveBoardTasklists", () => {
-  const task1 = new Tasklist({id: "1", name: "task1"});
-  const task2 = new Tasklist({id: "2", name: "task2"});
-  const tasks = [task1, task2];
-  const action = addActiveBoardTasklists(tasks);
-  expect(action).toEqual({
-    type: ADD_ACTIVE_BOARD_TASKLISTS,
-    tasklists: tasks
-  });
+  const dbTask1 = {id: 1, name: "task1"};
+  const dbTask2 = { id: 2, name: "task2" };
+  const dbTasklistData = {id: 2, name: "tasklist2"};
+  const dbTasklist = {tasklist: dbTasklistData, tasks: [ dbTask1, dbTask2 ]};
+  const action = addActiveBoardTasklists([ dbTasklist ]);
+  expect(action.type).toEqual(ADD_ACTIVE_BOARD_TASKLISTS);
+  expect(action.tasklists).toEqual([ dbTasklist ]);
 });

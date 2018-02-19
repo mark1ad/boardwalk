@@ -1,21 +1,35 @@
 import Tasklist from './Tasklist';
+import Task from './Task';
+
+let tasklist;
+const dbTask = {id: 1, name: "name"};
+const task = new Task(dbTask);
+const tasklistData = {id: 1, name: "tasklist1"};
+const dbTasklist = {tasklist: tasklistData, tasks: []};
+
+beforeEach(() => {
+  tasklist = new Tasklist(dbTasklist);
+})
 
 it("new Tasklist", () => {
-  const newTasklist = new Tasklist({id: "1", name: "tasklist1"});
-  expect(newTasklist).toBeDefined();
+  expect(tasklist).toBeDefined();
 })
 
 it("valid id", () => {
-  const tasklist = new Tasklist({id: "1", name: "tasklist1"});
-  expect(tasklist.id).toEqual("1");
+  expect(tasklist.id).toEqual(1);
 })
 
 it("valid name", () => {
-  const tasklist = new Tasklist({id: "1", name: "tasklist1"});
   expect(tasklist.name).toEqual("tasklist1");
 })
 
 it("empty tasks array from constructor", () => {
-  const tasklist = new Tasklist({id: "1", name: "tasklist1"});
   expect(tasklist.tasks.length).toEqual(0);
+})
+
+it("tasklist has tasks", () => {
+  let newDBTasklist = dbTasklist;
+  newDBTasklist.tasks = [ task ];
+  const tasklist = new Tasklist(newDBTasklist);
+  expect(tasklist.tasks.length).toEqual(1);
 })

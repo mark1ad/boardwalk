@@ -13,7 +13,7 @@ const mapStateToProps = (state, props) => {
   return {id: props.task.id, name: props.task.name, class: "task-card"};
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
   let submit = () => {
 
   };

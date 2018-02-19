@@ -13,7 +13,10 @@ const task2 = new Task({id: 2, name: "task2"});
 const tasks = [ task1, task2 ];
 
 beforeEach(() => {
-  tasklist = new Tasklist({id: 1, name: "name"});
+  tasklist = new Tasklist({
+    tasklist: {id: 1, name: "name"},
+    tasks: []
+  });
 })
 
 it('renders without crashing', () => {
