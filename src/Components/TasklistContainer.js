@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import ShowTaskCard from "./ShowTaskCard";
+import ShowCreateTaskCard from "./ShowCreateTaskCard";
 
 const TasklistContainer = (props) => {
   return (
@@ -13,6 +14,7 @@ const TasklistContainer = (props) => {
           <ShowTaskCard key={task.id} task={task} />
         )
       )}
+      <ShowCreateTaskCard />
     </div>
   );
 };
