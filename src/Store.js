@@ -3,6 +3,7 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Boards } from "./Reducers/BoardReducers";
 import { CreateBoard } from "./Reducers/CreateBoardReducer";
 import { ActiveBoard } from "./Reducers/ActiveBoardReducer";
+import { CreateTask } from "./Reducers/CreateTaskReducer";
 
 let initStore = {};
 
@@ -23,7 +24,14 @@ const logger = store => next => action => {
   /* eslint-enable no-console */
 };
 
+const reducers = {
+  Boards,
+  CreateBoard,
+  ActiveBoard,
+  CreateTask
+};
+
 const Store = (initialState = initStore) =>
-  applyMiddleware(logger)(createStore)(combineReducers({Boards, CreateBoard, ActiveBoard}), initialState);
+  applyMiddleware(logger)(createStore)(combineReducers(reducers), initialState);
 
 export default Store;
