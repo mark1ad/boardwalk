@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 
 import Card from "./Card";
+import { openCreateTask } from "../Actions/CreateTaskActions";
 
 const mapStateToProps = () => {
   return {
@@ -10,9 +11,9 @@ const mapStateToProps = () => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   let submit = () => {
-    console.log("create task card submit");
+    dispatch(openCreateTask(ownProps.tasklist_id));
   };
 
   return {

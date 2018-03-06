@@ -3,9 +3,19 @@
 exports[`renders correctly with show == false 1`] = `null`;
 
 exports[`renders correctly with show==true 1`] = `
-<div>
-  <h1>
-    Hi!
-  </h1>
+<div
+  className="create-task-modal"
+>
+  <div
+    className="modal-style"
+  >
+    <h1>
+      Hi!
+    </h1>
+    <h2>
+      Tasklist: 
+      1
+    </h2>
+  </div>
 </div>
 `;

@@ -62,7 +62,9 @@ ShallowWrapper {
             }
 />,
         ],
-        <Connect(Card) />,
+        <Connect(Card)
+          tasklist_id={1}
+/>,
       ],
       "className": "tasklist-container",
     },
@@ -114,7 +116,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "tasklist_id": 1,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -154,7 +158,9 @@ ShallowWrapper {
               }
 />,
           ],
-          <Connect(Card) />,
+          <Connect(Card)
+            tasklist_id={1}
+/>,
         ],
         "className": "tasklist-container",
       },
@@ -206,7 +212,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "tasklist_id": 1,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -257,7 +265,9 @@ ShallowWrapper {
           name
 </div>,
         Array [],
-        <Connect(Card) />,
+        <Connect(Card)
+          tasklist_id={1}
+/>,
       ],
       "className": "tasklist-container",
     },
@@ -279,7 +289,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "tasklist_id": 1,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -300,7 +312,9 @@ ShallowWrapper {
             name
 </div>,
           Array [],
-          <Connect(Card) />,
+          <Connect(Card)
+            tasklist_id={1}
+/>,
         ],
         "className": "tasklist-container",
       },
@@ -322,7 +336,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "tasklist_id": 1,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

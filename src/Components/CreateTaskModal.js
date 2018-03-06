@@ -9,15 +9,19 @@ class CreateTaskModal extends Component {
     }
 
     return(
-      <div>
-        <h1>Hi!</h1>
+      <div className="create-task-modal">
+        <div className="modal-style">
+          <h1>Hi!</h1>
+          <h2>Tasklist: {this.props.tasklist_id}</h2>
+        </div>
       </div>
     );
   }
 }
 
 CreateTaskModal.propTypes = {
-  show: PropTypes.bool.isRequired
+  show: PropTypes.bool.isRequired,
+  tasklist_id: PropTypes.number.isRequired
 };
 
 export default CreateTaskModal;

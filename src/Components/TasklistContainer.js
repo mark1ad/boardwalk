@@ -14,7 +14,7 @@ const TasklistContainer = (props) => {
           <ShowTaskCard key={task.id} task={task} />
         )
       )}
-      <ShowCreateTaskCard />
+      <ShowCreateTaskCard tasklist_id={props.tasklist.id} />
     </div>
   );
 };
