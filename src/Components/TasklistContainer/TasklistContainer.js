@@ -1,8 +1,11 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-import ShowTaskCard from "./ShowTaskCard";
-import ShowCreateTaskCard from "./ShowCreateTaskCard";
+import ShowTaskCard from "../ShowTaskCard";
+import ShowCreateTaskCard from "../ShowCreateTaskCard";
 
+/**
+ * Displays the tasks in a tasklist.
+ */
 const TasklistContainer = (props) => {
   return (
     <div className="tasklist-container">
@@ -20,6 +23,7 @@ const TasklistContainer = (props) => {
 };
 
 TasklistContainer.propTypes = {
+  /** List of tasks */
   tasklist: PropTypes.object.isRequired
 };
 

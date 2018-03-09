@@ -7,7 +7,7 @@
 
 import { connect } from "react-redux";
 
-import Card from "./Card";
+import Card from "./Card/Card";
 
 const mapStateToProps = (state, props) => {
   return {id: props.task.id, name: props.task.name, class: "task-card"};

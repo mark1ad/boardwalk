@@ -4,6 +4,9 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
+/**
+ * Form for creating a new board.
+ */
 const ActiveCreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
   let _name;
 
@@ -37,8 +40,11 @@ const ActiveCreateBoardCard = ({placeholder, submitBoard, cancelNewBoard}) => {
 };
 
 ActiveCreateBoardCard.propTypes = {
+  /** Placeholder for name text field */
   placeholder: PropTypes.string.isRequired,
+  /** Callback to create the new board. */
   submitBoard: PropTypes.func.isRequired,
+  /** Callback for cancel button */
   cancelNewBoard: PropTypes.func.isRequired
 };
 

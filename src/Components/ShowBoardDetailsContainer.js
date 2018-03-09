@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 
-import BoardDetailsContainer from "./BoardDetailsContainer";
+import BoardDetailsContainer
+  from "./BoardDetailsContainer/BoardDetailsContainer";
 import Board from "../Helpers/Board";
 import {
   setActiveBoard,

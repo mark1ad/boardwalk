@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import CreateTaskModal from "./CreateTaskModal";
+import CreateTaskModal from "./CreateTaskModal/CreateTaskModal";
 
 const mapStateToProps = (state) => {
   return {

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import Card from "./Card";
+import Card from "./Card/Card";
 import { openCreateTask } from "../Actions/CreateTaskActions";
 
 const mapStateToProps = () => {

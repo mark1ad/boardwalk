@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import Card from "./Card";
+import Card from "./Card/Card";
 import { openCreateBoard } from "../Actions/CreateBoardActions";
 
 const mapStateToProps = () => {

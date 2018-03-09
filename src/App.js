@@ -4,7 +4,7 @@ import { HashRouter, Route } from "react-router-dom";
 import "./App.css";
 import ShowCreateTaskModal from "./Components/ShowCreateTaskModal";
 
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import ShowBoardList from "./Components/ShowBoardList";
 import ShowBoardDetailsContainer from "./Components/ShowBoardDetailsContainer";
 

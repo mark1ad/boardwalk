@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import CreateBoardContainer from "./CreateBoardContainer";
+import CreateBoardContainer from "./CreateBoardContainer/CreateBoardContainer";
 
 const mapStateToProps = (state) => {
   return state.CreateBoard;

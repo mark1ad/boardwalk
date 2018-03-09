@@ -17,10 +17,10 @@
 
 @import "Components/createboardcard";
 @import "Components/boardcard";
-@import "Components/boardlist";
-@import "Components/boarddetailscontainer";
-@import "Components/boarddetailsheader";
-@import "Components/tasklistcontainer";
+@import "Components/BoardList/boardlist";
+@import "Components/BoardDetailsContainer/boarddetailscontainer";
+@import "Components/BoardDetailsHeader/boarddetailsheader";
+@import "Components/TasklistContainer/tasklistcontainer";
 @import "Components/taskcard";
 @import "Components/createtaskcard";
-@import "Components/createtaskmodal";
+@import "Components/CreateTaskModal/createtaskmodal";

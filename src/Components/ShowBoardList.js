@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import BoardList from "./BoardList";
+import BoardList from "./BoardList/BoardList";
 import { setBoards } from "../Actions/BoardActions";
 
 const mapStateToProps = (state) => {

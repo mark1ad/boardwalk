@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 
-import ActiveCreateBoardCard from "./ActiveCreateBoardCard";
+import ActiveCreateBoardCard
+  from "./ActiveCreateBoardCard/ActiveCreateBoardCard";
 import { newBoard } from "../Actions/BoardActions";
 import { closeCreateBoard } from "../Actions/CreateBoardActions";
 
