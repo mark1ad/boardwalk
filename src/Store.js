@@ -9,18 +9,18 @@ let initStore = {};
 
 const logger = store => next => action => {
   /* eslint-disable no-console */
-  if (console.groupCollapsed !== undefined) {
-    console.groupCollapsed("dispatching ", action.type);
-  }
-  console.log("\n>>> Dispatching ", action.type);
-  console.log("prev state ", store.getState());
-  console.log("action ", action);
+  // if (console.groupCollapsed !== undefined) {
+  //   console.groupCollapsed("dispatching ", action.type);
+  // }
+  // console.log("\n>>> Dispatching ", action.type);
+  // console.log("prev state ", store.getState());
+  // console.log("action ", action);
   next(action);
-  console.log("next state ", store.getState());
-  console.log("\n");
-  if (console.groupEnd !== undefined) {
-    console.groupEnd();
-  }
+  // console.log("next state ", store.getState());
+  // console.log("\n");
+  // if (console.groupEnd !== undefined) {
+  //   console.groupEnd();
+  // }
   /* eslint-enable no-console */
 };
 
