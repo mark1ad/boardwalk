@@ -20,17 +20,22 @@ ShallowWrapper {
       "children": <div
         className="App"
 >
-        <Header />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/"
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/board/:id"
-        />
+        <Connect(CreateTaskModal) />
+        <div
+                className="main-container"
+        >
+                <Header />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/board/:id"
+                />
+        </div>
 </div>,
     },
     "ref": null,
@@ -40,17 +45,22 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/board/:id"
-/>,
+          <Connect(CreateTaskModal) />,
+          <div
+            className="main-container"
+>
+            <Header />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/board/:id"
+            />
+</div>,
         ],
         "className": "App",
       },
@@ -59,7 +69,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {},
           "ref": null,
           "rendered": null,
@@ -68,28 +78,62 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
+            "children": Array [
+              <Header />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/board/:id"
+/>,
+            ],
+            "className": "main-container",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/board/:id",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/board/:id",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
@@ -105,17 +149,22 @@ ShallowWrapper {
         "children": <div
           className="App"
 >
-          <Header />
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/"
-          />
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/board/:id"
-          />
+          <Connect(CreateTaskModal) />
+          <div
+                    className="main-container"
+          >
+                    <Header />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/board/:id"
+                    />
+          </div>
 </div>,
       },
       "ref": null,
@@ -125,17 +174,22 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Header />,
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/"
-/>,
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/board/:id"
-/>,
+            <Connect(CreateTaskModal) />,
+            <div
+              className="main-container"
+>
+              <Header />
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/"
+              />
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/board/:id"
+              />
+</div>,
           ],
           "className": "App",
         },
@@ -144,7 +198,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {},
             "ref": null,
             "rendered": null,
@@ -153,28 +207,62 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/",
+              "children": Array [
+                <Header />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+/>,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/board/:id"
+/>,
+              ],
+              "className": "main-container",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/board/:id",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/board/:id",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
         ],
         "type": "div",

@@ -11,10 +11,12 @@ ShallowWrapper {
             "name": "name",
             "tasks": Array [
               Task {
+                "description": undefined,
                 "id": 1,
                 "name": "task1",
               },
               Task {
+                "description": undefined,
                 "id": 2,
                 "name": "task2",
               },
@@ -44,6 +46,7 @@ ShallowWrapper {
           <Connect(Card)
             task={
                         Task {
+                                    "description": undefined,
                                     "id": 1,
                                     "name": "task1",
                                   }
@@ -52,12 +55,16 @@ ShallowWrapper {
           <Connect(Card)
             task={
                         Task {
+                                    "description": undefined,
                                     "id": 2,
                                     "name": "task2",
                                   }
             }
 />,
         ],
+        <Connect(Card)
+          tasklist_id={1}
+/>,
       ],
       "className": "tasklist-container",
     },
@@ -81,6 +88,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "task": Task {
+            "description": undefined,
             "id": 1,
             "name": "task1",
           },
@@ -95,9 +103,21 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "task": Task {
+            "description": undefined,
             "id": 2,
             "name": "task2",
           },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "tasklist_id": 1,
         },
         "ref": null,
         "rendered": null,
@@ -122,6 +142,7 @@ ShallowWrapper {
             <Connect(Card)
               task={
                             Task {
+                                          "description": undefined,
                                           "id": 1,
                                           "name": "task1",
                                         }
@@ -130,12 +151,16 @@ ShallowWrapper {
             <Connect(Card)
               task={
                             Task {
+                                          "description": undefined,
                                           "id": 2,
                                           "name": "task2",
                                         }
               }
 />,
           ],
+          <Connect(Card)
+            tasklist_id={1}
+/>,
         ],
         "className": "tasklist-container",
       },
@@ -159,6 +184,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "task": Task {
+              "description": undefined,
               "id": 1,
               "name": "task1",
             },
@@ -173,9 +199,21 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "task": Task {
+              "description": undefined,
               "id": 2,
               "name": "task2",
             },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "tasklist_id": 1,
           },
           "ref": null,
           "rendered": null,
@@ -227,6 +265,9 @@ ShallowWrapper {
           name
 </div>,
         Array [],
+        <Connect(Card)
+          tasklist_id={1}
+/>,
       ],
       "className": "tasklist-container",
     },
@@ -244,6 +285,17 @@ ShallowWrapper {
         "rendered": "name",
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "tasklist_id": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -260,6 +312,9 @@ ShallowWrapper {
             name
 </div>,
           Array [],
+          <Connect(Card)
+            tasklist_id={1}
+/>,
         ],
         "className": "tasklist-container",
       },
@@ -276,6 +331,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": "name",
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "tasklist_id": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

@@ -3,7 +3,7 @@ import Task from './Task';
 let task;
 
 beforeEach(() => {
- task = new Task({id: "1", name: "task1"});
+ task = new Task({id: "1", name: "task1", description: "task 1 description"});
 })
 
 it("new Task", () => {
@@ -16,4 +16,8 @@ it("valid id from constructor", () => {
 
 it("valid name from constructor", () => {
   expect(task.name).toEqual("task1");
+})
+
+it("valid description from constructor", () => {
+  expect(task.description).toEqual("task 1 description");
 })

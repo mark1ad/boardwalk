@@ -11,6 +11,10 @@ import {
   openCreateBoard,
   closeCreateBoard
 } from './Actions/CreateBoardActions';
+import {
+  openCreateTask,
+  closeCreateTask
+} from './Actions/CreateTaskActions';
 import Board from './Helpers/Board';
 import Tasklist from './Helpers/Tasklist';
 
@@ -72,4 +76,20 @@ it("should set isBoardOpen to false", () => {
   store.dispatch(openCreateBoard()); // First set it true
   store.dispatch(closeCreateBoard());
   expect(store.getState().CreateBoard.isBoardOpen).toEqual(false);
+})
+
+//*************************
+// Test CreateTask
+it("should set isTaskOpen to true", () => {
+  store.dispatch(openCreateTask(1));
+  const createTask = store.getState().CreateTask;
+  expect(createTask.isTaskOpen).toEqual(true);
+  expect(createTask.tasklist_id).toEqual(1);
+})
+
+it("should set isTaskOpen to false", () => {
+  store.dispatch(openCreateTask(1)); // first set it true
+  store.dispatch(closeCreateTask()); // set it false
+  const createTask = store.getState().CreateTask;
+  expect(createTask.isTaskOpen).toEqual(false);
 })

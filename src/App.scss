@@ -7,6 +7,14 @@
   margin: auto;
 }
 
+.main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @import "Components/createboardcard";
 @import "Components/boardcard";
 @import "Components/boardlist";
@@ -14,3 +22,5 @@
 @import "Components/boarddetailsheader";
 @import "Components/tasklistcontainer";
 @import "Components/taskcard";
+@import "Components/createtaskcard";
+@import "Components/createtaskmodal";
