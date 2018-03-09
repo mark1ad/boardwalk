@@ -21,7 +21,7 @@ class CreateTaskModal extends Component {
 
 CreateTaskModal.propTypes = {
   show: PropTypes.bool.isRequired,
-  tasklist_id: PropTypes.number.isRequired
+  tasklist_id: PropTypes.number
 };
 
 export default CreateTaskModal;
