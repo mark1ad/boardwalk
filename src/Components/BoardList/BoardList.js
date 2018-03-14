@@ -7,10 +7,13 @@
 
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
-import ShowCreateBoardContainer from "./ShowCreateBoardContainer";
+import ShowCreateBoardContainer from "../ShowCreateBoardContainer";
 
-import ShowBoardCard from "./ShowBoardCard";
+import ShowBoardCard from "../ShowBoardCard";
 
+/**
+ * Displays the list of all boards.
+ */
 class BoardList extends Component {
   componentWillMount() {
     this.props.getBoards();
@@ -35,7 +38,9 @@ class BoardList extends Component {
 }
 
 BoardList.propTypes = {
+  /** List of boards to display */
   Boards: PropTypes.array.isRequired,
+  /** Populates Boards in componentWillMount */
   getBoards: PropTypes.func.isRequired
 };
 

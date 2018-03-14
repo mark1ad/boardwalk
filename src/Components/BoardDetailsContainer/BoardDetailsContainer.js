@@ -5,9 +5,12 @@
 import React, { Component   } from "react";
 import { PropTypes } from "prop-types";
 
-import ShowBoardDetailsHeader from "./ShowBoardDetailsHeader";
-import ShowTasklistContainer from "./ShowTasklistContainer";
+import ShowBoardDetailsHeader from "../ShowBoardDetailsHeader";
+import ShowTasklistContainer from "../ShowTasklistContainer";
 
+/**
+ * Displays a board's tasklists.
+ */
 class BoardDetailsContainer extends Component {
   componentWillMount() {
     this.props.getBoardInfo();
@@ -31,7 +34,9 @@ class BoardDetailsContainer extends Component {
 }
 
 BoardDetailsContainer.propTypes = {
+  /** Method that populates ActiveBoard when component will mount. */
   getBoardInfo: PropTypes.func.isRequired,
+  /** Board to display */
   ActiveBoard: PropTypes.object.isRequired
 };
 

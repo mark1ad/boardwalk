@@ -9,7 +9,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 
-import Card from "./Card";
+import Card from "./Card/Card";
 
 const mapStateToProps = (state, props) => {
   return {id: props.id, name: props.name, class: "board-card"};

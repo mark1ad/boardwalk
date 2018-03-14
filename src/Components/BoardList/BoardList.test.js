@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import BoardList from './BoardList';
-import Board from '../Helpers/Board';
+import Board from '../../Helpers/Board';
 
 let mockGetBoardsFunc;
 const board1 = new Board({id: 1, name: "board1"});

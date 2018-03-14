@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import BoardDetailsContainer from './BoardDetailsContainer';
-import Board from '../Helpers/Board';
-import Tasklist from '../Helpers/Tasklist';
+import Board from '../../Helpers/Board';
+import Tasklist from '../../Helpers/Tasklist';
 
 let mockGetBoardInfoFunc;
 const board = new Board({id: 1, name: "name"});

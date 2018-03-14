@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { PropTypes } from "prop-types";
 
+/**
+ * Modal form for entering information for a new task
+ */
 class CreateTaskModal extends Component {
   render() {
     // Render nothing if the "show" prop is false
@@ -20,7 +23,9 @@ class CreateTaskModal extends Component {
 }
 
 CreateTaskModal.propTypes = {
+  /** If true, modal is displayed */
   show: PropTypes.bool.isRequired,
+  /** ID of tasklist that new task will be in. */
   tasklist_id: PropTypes.number
 };
 
